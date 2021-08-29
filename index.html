@@ -280,23 +280,23 @@
                 <div class="row form-group">
                   <div class="col-md-6 mb-3 mb-md-0">
                     <label class="text-black" for="fname">First Name</label>
-                    <input type="text" id="fname" class="form-control rounded-0">
+                    <input type="text" name="fname" id="fname" class="form-control rounded-0">
                   </div>
                   <div class="col-md-6">
                     <label class="text-black" for="lname">Last Name</label>
-                    <input type="text" id="lname" class="form-control rounded-0">
+                    <input type="text" name="lname" id="lname" class="form-control rounded-0">
                   </div>
                 </div>
                 <div class="row form-group">
                   <div class="col-md-12">
                     <label class="text-black" for="email">Email</label>
-                    <input type="email" id="email" class="form-control rounded-0">
+                    <input type="email" name="email" id="email" class="form-control rounded-0">
                   </div>
                 </div>
                 <div class="row form-group">
                   <div class="col-md-12">
                     <label class="text-black" for="subject">Subject</label>
-                    <input type="subject" id="subject" class="form-control rounded-0">
+                    <input type="subject" name="subject" id="subject" class="form-control rounded-0">
                   </div>
                 </div>
                 <div class="row form-group">
@@ -418,17 +418,6 @@
     })();
   </script>
   <script>
-    const formSubmit = document.querySelector('#submitForm')
-
-    formSubmit.addEventListener('click', () => {
-      var templateParams = {
-        name: document.querySelector('#fname').value + ' ' + document.querySelector('#lname').value,
-        email: document.querySelector('#email').value,
-        subject: document.querySelector('#subject').value,
-        message: document.querySelector('#message').value,
-      };
-      console.log(templateParams);
-    })
     // Run function when DOM Content has loaded
     document.addEventListener('DOMContentLoaded', init);
 
@@ -483,6 +472,13 @@
 
     function displayErrors(errors) {
       var errorBox = document.getElementById('errorMessages');
+
+      var templateParams = {
+        name: document.querySelector('#fname').value + ' ' + document.querySelector('#lname').value,
+        email: document.querySelector('#email').value,
+        subject: document.querySelector('#subject').value,
+        message: document.querySelector('#message').value,
+      };
 
       // If there aren't any errors
       if (!errors.length) {
