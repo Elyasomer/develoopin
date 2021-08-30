@@ -3332,6 +3332,8 @@ body {
   font-size: 14px;
   line-height: 1.625em;
   position: relative;
+  max-width: 100rem;
+  margin: auto;
 }
 ol,
 ul {
@@ -4651,9 +4653,10 @@ h6 {
 .banner-area {
   margin-top: -56px;
   border-radius: 10px;
-  background: url(../images/img-xheader-bg.jpg.pagespeed.ic.TL2oxVgc_8.jpg)
-    center;
+  background: url(https://images.unsplash.com/photo-1553390774-b4822481c894?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1283&q=80)
+    left center no-repeat;
   background-size: cover;
+position: relative;
 }
 @media (max-width: 1199.98px) {
   .banner-area .fullscreen {
@@ -4662,7 +4665,7 @@ h6 {
 }
 .banner-area .overlay-bg {
   border-radius: 10px;
-  background-color: rgba(4, 9, 30, 0.5);
+  background-color: rgba(4, 9, 30, 0.7);
 }
 .banner-content {
   text-align: center;
@@ -4698,7 +4701,7 @@ h6 {
 }
 .banner-content h5 {
   color: #8ab92d;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 3px;
   font-size: 12px;
 }
