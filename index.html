@@ -52,8 +52,6 @@
 
               <span>PIN</span>
             </div>
-            <!-- <img width="200px" src="./images/develoopin (1).png" -->
-            <!-- alt=""> -->
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,9 +60,10 @@
           <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li><a href="#home">Ana səhifə</a></li>
-              <li><a href="#portfolio">Xidmətlər</a></li>
-              <li><a href="#service">Haqqımızda</a></li>
+              <li><a href="#portfolio">Layihələrimiz</a></li>
+              <li><a href="#service">Xidmətlər</a></li>
               <li><a href="#contactus">Bizimlə əlaqə</a></li>
+              <li><a href="#footer">Haqqımızda</a></li> 
             </ul>
           </div>
         </div>
@@ -128,7 +127,7 @@
                     alt="Work 2">
                   <div class="p-inner">
                     <h4>Blog saytı</h4>
-                    <div class="cat">Python-un framwork-u olan Django ilə yazılmış layihədir.</div>
+                    <div class="cat">Python-un framework-u olan Django ilə yazılmış layihədir.</div>
                   </div>
                 </div>
               </div>
@@ -141,7 +140,7 @@
                     alt="Work 3">
                   <div class="p-inner">
                     <h4>Gördüyümüz işlərin zamanını idarəetmə saytı</h4>
-                    <div class="cat">İşləri zamanında görmək, qısa fasilələr vermək və sizin ruhunuzu sakitləşdirmək üçün fonda təbiət və başqa səslər açıq saxlayıb işinizi görə biləcəyiniz bir layihədir. Bu layihə həmşinin Python-un Django framework-u ilə yazılıb</div>
+                    <div class="cat">İşləri zamanında görmək, qısa fasilələr vermək və sizin ruhunuzu sakitləşdirmək üçün fonda təbiət və başqa səslər açıq saxlayıb işinizi görə biləcəyiniz bir layihədir. Bu layihə həmçinin Python-un Django framework-u ilə yazılıb</div>
                   </div>
                 </div>
               </div>
@@ -272,7 +271,7 @@
   </section>
 
 
-  <footer class="footer-area section-gap">
+  <footer class="footer-area section-gap" id="footer">
     <div class="container">
       <div class="row">
         <div class="col-lg-5 col-md-6 col-sm-6">
@@ -300,8 +299,6 @@
               <a target="_blank" href="https://www.instagram.com/develoopin/"><i class="fa fa-instagram"></i></a>
               <a href="#"><i class="fa fa-facebook"></i></a>
               <a href="#"><i class="fa fa-twitter"></i></a>
-              <!-- <a href="#"><i class="fa fa-dribbble"></i></a>
-              <a href="#"><i class="fa fa-behance"></i></a> -->
             </div>
           </div>
         </div>
@@ -414,7 +411,7 @@
       // If there aren't any errors
       if (!errors.length) {
         errorBox.innerHTML = '';
-        emailjs.sendForm('BuggersDev', 'BuggersDev', '#contactForm', 'user_02W0WgzX9nQv4zSEgqv1u')
+        emailjs.sendForm('Develoopin', 'Develoopin', '#contactForm', 'user_02W0WgzX9nQv4zSEgqv1u')
           .then(function (response) {
             console.log('SUCCESS!', response.status, response.text);
             alert('Mesajınız uğurla göndərildi!')

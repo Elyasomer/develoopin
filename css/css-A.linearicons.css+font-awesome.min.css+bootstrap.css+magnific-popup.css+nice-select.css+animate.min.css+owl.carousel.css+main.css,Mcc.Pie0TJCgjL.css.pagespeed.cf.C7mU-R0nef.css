@@ -4487,7 +4487,7 @@ h6 {
 }
 .default-header {
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 0;
   width: 100%;
   z-index: 9;
@@ -4793,7 +4793,6 @@ form .primary-btn:hover {
 .portfolio-area .filters-content .item img {
   border-radius: 10px;
   object-fit: cover;
-  /* width: 350px !important; */
   height: 300px;
 }
 .portfolio-area .filters-content .item .p-inner {
